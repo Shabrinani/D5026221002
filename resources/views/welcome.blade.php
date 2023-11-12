@@ -50,14 +50,14 @@
                         <div class="p-6">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Kampus ITS</a></div>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Jurusan</a></div>
                             </div>
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     Sistem Informasi ITS
                                     <br>
-                                    <?php echo date("D d M Y") ; ?>
+                                    <?php echo date("D d M Y"); ?>
                                 </div>
                             </div>
                         </div>
@@ -130,5 +130,27 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <h2 style="text-align:center; padding-top:10px">Link Terkait</h2>
+            <div style="display:flex; justify-content:center">
+                <ul style="list-style-type:none; padding-left: 0">
+                    <li><a href="http://127.0.0.1:8000/hello" target="_blank">Hello</a></li>
+                    <li><a href="http://127.0.0.1:8000/link" target="_blank">Link</a></li>
+                    <li><a href="http://127.0.0.1:8000/berita" target="_blank">Berita</a></li>
+                </ul>
+                <ul style="list-style-type:none; padding-left: 30px">
+                    <li><a href="http://127.0.0.1:8000/style" target="_blank">Style</a></li>
+                    <li><a href="http://127.0.0.1:8000/replacetext" target="_blank">Replace Text</a></li>
+                    <li><a href="http://127.0.0.1:8000/operasi" target="_blank">Operasi</a></li>
+                    <li><a href="http://127.0.0.1:8000/validasi" target="_blank">Validasi</a></li>
+                </ul>
+                <ul style="list-style-type:none; padding-left: 30px">
+                    <li><a href="http://127.0.0.1:8000/responsive" target="_blank">Responsive</a></li>
+                    <li><a href="http://127.0.0.1:8000/linktree" target="_blank">Linktree</a></li>
+                    <li><a href="http://127.0.0.1:8000/landingpage" target="_blank">Landing Page</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

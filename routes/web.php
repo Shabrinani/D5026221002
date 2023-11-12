@@ -17,19 +17,46 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// kalau kode di bawah tidak dikomen dan nama functionnya sama dengan yg dia atas, maka yg dijalankan adalah yg terakhir, yaitu kode di bawah ini, bukan yg di atas
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('halo', function () {
-	return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
+Route::get('/hello', function () {
+    return view('hello');
 });
 
-Route::get('halo2', function () {
-	return "<h1>Halo, Selamat datang</h1>";
+Route::get('/replacetext', function () {
+    return view('js1');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/operasi', function () {
+    return view('js2');
 });
+
+Route::get('/link', function () {
+    return view('link');
+});
+
+Route::get('/berita', function () {
+    return view('berita');
+});
+
+Route::get('/responsive', function () {
+    return view('responsive');
+});
+
+Route::get('/style', function () {
+    return view('style');
+});
+
+Route::get('/validasi', function () {
+    return view('validasi');
+});
+
+Route::get('/linktree', function () {
+    return view('linktree');
+});
+
+Route::get('/landingpage', function () {
+    return view('landing-page');
+});
+
+Route::get('perkalian','App\Http\Controllers\DosenController@index');
+
+Route::get('show','App\Http\Controllers\DosenController@showBlog');
