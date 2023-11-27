@@ -11,7 +11,8 @@ class PegawaiController extends Controller
     public function index()
     {
     	// mengambil data dari table pegawai
-    	$pegawai = DB::table('pegawai')->get();
+    	// $pegawai = DB::table('pegawai')->get(); // $var = DB::table('pegawai') --> ada return valuenya berupa array 2 dimensi
+        $pegawai = DB::table('pegawai')->paginate(10);
 
     	// mengirim data pegawai ke view index
     	return view('index',['pegawai' => $pegawai]);
@@ -51,7 +52,7 @@ class PegawaiController extends Controller
     public function update(Request $request)
     {
 	    // update data pegawai
-	    DB::table('pegawai')->where('pegawai_id',$request->id)->update([
+	    DB::table('pegawai')->where('pegawai_id',$request->id)->update([  //DB::table('pegawai') --> optional return value
 		    'pegawai_nama' => $request->nama,
 		    'pegawai_jabatan' => $request->jabatan,
 		    'pegawai_umur' => $request->umur,
@@ -59,6 +60,7 @@ class PegawaiController extends Controller
 	    ]);
 	    // alihkan halaman ke halaman pegawai
 	    return redirect('/pegawai');
+        //redirect melampar ke suatu url route pegawai, maka akan query all record
     }
 
     // method untuk hapus data pegawai
@@ -70,4 +72,19 @@ class PegawaiController extends Controller
 	    // alihkan halaman ke halaman pegawai
 	    return redirect('/pegawai');
     }
+
+    public function cari(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
+
+    		// mengambil data dari table pegawai sesuai pencarian data
+		$pegawai = DB::table('pegawai')
+		->where('pegawai_nama','like',"%".$cari."%")
+		->paginate();
+
+    		// mengirim data pegawai ke view index
+		return view('index',['pegawai' => $pegawai]);
+
+	}
 }
