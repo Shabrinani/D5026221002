@@ -52,9 +52,9 @@
     <script>
         function confirmDelete() {
             if (confirm('Apakah Anda yakin ingin menghapus data ini?')) {
-                return true; // Lanjutkan penghapusan data jika pengguna menekan OK
+                return true;
             } else {
-                return false; // Batalkan penghapusan data jika pengguna menekan Cancel
+                return false; 
             }
         }
     </script>
