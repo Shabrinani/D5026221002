@@ -42,7 +42,8 @@
                     |
                     <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
                     |
-                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger" onclick="return confirmDelete()">Hapus</a>
+                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger"
+                        onclick="return confirmDelete()">Hapus</a>
                 </td>
             </tr>
         @endforeach
