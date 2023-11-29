@@ -55,7 +55,7 @@
         <br />
         <hr />
         <footer>
-            <p>&copy; 5026221002 - Shabrina Nur Ihsani.2023</p>
+            <p>&copy; 5026221002 - Shabrina Nur Ihsani - 2023</p>
         </footer>
     </div>
 </body>

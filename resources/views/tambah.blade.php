@@ -1,7 +1,7 @@
 @extends('master2')
 
 @section('konten')
-	<h2>Data Pegawai</h2>
+	<h2>Tambah Pegawai</h2>
 
 	<br/>
 

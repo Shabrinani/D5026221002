@@ -85,6 +85,17 @@ class PegawaiController extends Controller
 
     		// mengirim data pegawai ke view index
 		return view('index',['pegawai' => $pegawai]);
-
 	}
+
+    public function view($id)
+    {
+	    // mengambil data pegawai berdasarkan id yang dipilih
+	    $pegawai = DB::table('pegawai')->where('pegawai_id',$id)->get();
+	    // passing data pegawai yang didapat ke view view.blade.php
+	    if ($pegawai) {
+            return view('view', ['pegawai' => $pegawai]);
+        } else {
+            return redirect()->back()->with('error', 'Data pegawai tidak ditemukan.');
+        }
+    }
 }

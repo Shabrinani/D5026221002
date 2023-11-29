@@ -42,10 +42,20 @@
                     |
                     <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
                     |
-                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger" id="tombol_hapus">Hapus</a>
+                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger" onclick="return confirmDelete()">Hapus</a>
                 </td>
             </tr>
         @endforeach
     </table>
     {{ $pegawai->links() }}
+    <script>
+        function confirmDelete() {
+            if (confirm('Apakah Anda yakin ingin menghapus data ini?')) {
+                return true; // Lanjutkan penghapusan data jika pengguna menekan OK
+            } else {
+                return false; // Batalkan penghapusan data jika pengguna menekan Cancel
+            }
+        }
+    </script>
+
 @endsection
