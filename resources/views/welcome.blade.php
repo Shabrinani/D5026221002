@@ -138,17 +138,18 @@
                     <li><a href="http://127.0.0.1:8000/hello" target="_blank">Hello</a></li>
                     <li><a href="http://127.0.0.1:8000/link" target="_blank">Link</a></li>
                     <li><a href="http://127.0.0.1:8000/berita" target="_blank">Berita</a></li>
+                    <li><a href="http://127.0.0.1:8000/style" target="_blank">Style</a></li>
                 </ul>
                 <ul style="list-style-type:none; padding-left: 30px">
-                    <li><a href="http://127.0.0.1:8000/style" target="_blank">Style</a></li>
                     <li><a href="http://127.0.0.1:8000/replacetext" target="_blank">Replace Text</a></li>
                     <li><a href="http://127.0.0.1:8000/operasi" target="_blank">Operasi</a></li>
                     <li><a href="http://127.0.0.1:8000/validasi" target="_blank">Validasi</a></li>
+                    <li><a href="http://127.0.0.1:8000/responsive" target="_blank">Responsive</a></li>
                 </ul>
                 <ul style="list-style-type:none; padding-left: 30px">
-                    <li><a href="http://127.0.0.1:8000/responsive" target="_blank">Responsive</a></li>
                     <li><a href="http://127.0.0.1:8000/linktree" target="_blank">Linktree</a></li>
                     <li><a href="http://127.0.0.1:8000/landingpage" target="_blank">Landing Page</a></li>
+                    <li><a href="http://127.0.0.1:8000/pegawai" target="_blank">Pegawai</a></li>
                 </ul>
             </div>
         </footer>

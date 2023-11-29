@@ -11,37 +11,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">5026221002 - Shabrina Nur Ihsani</a>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">5026221002 - Shabrina Nur Ihsani</a>
 
-            <!-- Links -->
-            <ul class="navbar-nav">
-              <li class="nav-item">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
                 <a class="nav-link" href="#">Link 1</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Link 2</a>
-              </li>
+            </li>
 
-              <!-- Dropdown -->
-              <li class="nav-item dropdown">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  Database
+                    Database
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="/pegawai">Pegawai</a>
-                  <a class="dropdown-item" href="#">Link 2</a>
-                  <a class="dropdown-item" href="#">Link 3</a>
+                    <a class="dropdown-item" href="/pegawai">Pegawai</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
                 </div>
-              </li>
-            </ul>
-          </nav>
-        <hr/>
-        <br/>
-        <br/>
-
+            </li>
+        </ul>
+    </nav>
+    <hr />
+    <br />
+    <br />
+    <div class="container">
         <!-- bagian judul halaman blog -->
         @yield('judul_halaman')
 
@@ -56,7 +55,7 @@
         <br />
         <hr />
         <footer>
-            <p>&copy; <a href="https://www.malasngoding.com">www.malasngoding.com</a>. 2018 - 2019</p>
+            <p>&copy; 5026221002 - Shabrina Nur Ihsani.2023</p>
         </footer>
     </div>
 </body>

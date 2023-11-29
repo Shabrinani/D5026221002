@@ -2,23 +2,28 @@
 @section('title', 'Database Pegawai')
 
 @section('judul_halaman')
-    <h2>www.malasngoding.com</h2>
-    <h3>Data Pegawai</h3>
+    <h2>Data Pegawai</h2>
 
-    <a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+    <a href="/pegawai/tambah" class="btn btn-primary my-3"> + Tambah Pegawai Baru</a>
 
-    <br />
     <br />
 @endsection
 
 @section('konten')
     <p>Cari Data Pegawai :</p>
     <form action="/pegawai/cari" method="GET">
-        <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai Berdasarkan Nama.." value="{{ old('cari') }}">
-        <input class="btn btn-primary" type="submit" value="CARI">
+        <div class="row">
+            <div class="col-sm-11">
+                <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai Berdasarkan Nama.."
+                    value="{{ old('cari') }}">
+            </div>
+            <div class="col-sm-1">
+                <input class="btn btn-primary btn-block" type="submit" value="CARI">
+            </div>
+        </div>
     </form>
 
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover my-4">
         <tr>
             <th>Nama</th>
             <th>Jabatan</th>
@@ -37,7 +42,7 @@
                     |
                     <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
                     |
-                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>
+                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger" id="tombol_hapus">Hapus</a>
                 </td>
             </tr>
         @endforeach
