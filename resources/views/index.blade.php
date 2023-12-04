@@ -35,7 +35,15 @@
             <tr>
                 <td>{{ $p->pegawai_nama }}</td>
                 <td>{{ $p->pegawai_jabatan }}</td>
-                <td>{{ $p->pegawai_umur }}</td>
+                <td
+                @if($p->pegawai_umur <= 20)
+                class = "bg-success text-light"
+                @elseif($p->pegawai_umur >= 21 && $p->pegawai_umur <= 30)
+                class = "bg-warning text-danger"
+                @elseif($p->pegawai_umur >= 30)
+                class = "bg-primary text-light"
+                @endif
+                >{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
                     <a href="/pegawai/view/{{ $p->pegawai_id }}" class="btn btn-success">View</a>
@@ -54,7 +62,7 @@
             if (confirm('Apakah Anda yakin ingin menghapus data ini?')) {
                 return true;
             } else {
-                return false; 
+                return false;
             }
         }
     </script>
