@@ -57,6 +57,7 @@
         @endforeach
     </table>
     {{ $pegawai->links() }}
+    
     <script>
         function confirmDelete() {
             if (confirm('Apakah Anda yakin ingin menghapus data ini?')) {
