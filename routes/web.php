@@ -76,10 +76,17 @@ Route::get('pegawai/edit/{id}', 'App\Http\Controllers\PegawaiController@edit');
 Route::post('/pegawai/update', 'App\Http\Controllers\PegawaiController@update');
 Route::get('pegawai/hapus/{id}', 'App\Http\Controllers\PegawaiController@hapus');
 Route::get('pegawai/view/{id}', 'App\Http\Controllers\PegawaiController@view');
-
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 Route::get('/nilai','App\Http\Controllers\NilaiController@index');
 Route::get('/nilai/tambah','App\Http\Controllers\NilaiController@tambah');
 Route::post('/nilai/store','App\Http\Controllers\NilaiController@store');
+
+Route::get('/meja', 'App\Http\Controllers\MejaController@index');
+Route::get('/meja/tambah', 'App\Http\Controllers\MejaController@tambah');
+Route::post('/meja/store', 'App\Http\Controllers\MejaController@store');
+Route::get('meja/edit/{kode}', 'App\Http\Controllers\MejaController@edit');
+Route::post('/meja/update', 'App\Http\Controllers\MejaController@update');
+Route::get('meja/hapus/{kode}', 'App\Http\Controllers\MejaController@hapus');
+Route::get('meja/view/{kode}', 'App\Http\Controllers\MejaController@view');
 

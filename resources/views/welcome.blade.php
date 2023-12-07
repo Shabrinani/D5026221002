@@ -150,6 +150,10 @@
                     <li><a href="http://127.0.0.1:8000/linktree" target="_blank">Linktree</a></li>
                     <li><a href="http://127.0.0.1:8000/landingpage" target="_blank">Landing Page</a></li>
                     <li><a href="http://127.0.0.1:8000/pegawai" target="_blank">Pegawai</a></li>
+                    <li><a href="http://127.0.0.1:8000/nilai" target="_blank">Nilai</a></li>
+                </ul>
+                <ul style="list-style-type:none; padding-left: 30px">
+                    <li><a href="http://127.0.0.1:8000/meja" target="_blank">Meja</a></li>
                 </ul>
             </div>
         </footer>
