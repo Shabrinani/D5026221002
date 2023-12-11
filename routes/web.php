@@ -90,3 +90,7 @@ Route::post('/meja/update', 'App\Http\Controllers\MejaController@update');
 Route::get('meja/hapus/{kode}', 'App\Http\Controllers\MejaController@hapus');
 Route::get('meja/view/{kode}', 'App\Http\Controllers\MejaController@view');
 
+Route::get('/karyawan', 'App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambah', 'App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store', 'App\Http\Controllers\KaryawanController@store');
+Route::get('karyawan/hapus/{kode}', 'App\Http\Controllers\KaryawanController@hapus');
